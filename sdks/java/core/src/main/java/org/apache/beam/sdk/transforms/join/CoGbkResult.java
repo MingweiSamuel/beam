@@ -191,8 +191,9 @@ public class CoGbkResult {
   }
 
   /**
-   * If there is a singleton value for the given tag, returns it.  If there is
-   * no value for the given tag, returns the defaultValue.
+   * If there is a singleton value for the given tag, returns it.
+   * If there is no value for the given tag, returns the defaultValue.
+   * If there are multiple values for the given tag, throws an IllegalArgumentException.
    *
    * <p>If tag was not part of the original {@link CoGroupByKey},
    * throws an IllegalArgumentException.
